@@ -18,19 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Julien Pons' portfolio
+title: Portfolio de Julien Pons
 email: julien.pons7@orange.fr
 description: >- # this means to ignore newlines until "baseurl:"
-  My portfolio of projects since I started coding. Not everything is there, just what I personally consider to be the most interesting ones.
+  Ceci est un portfolio de projects sur lesquels j'ai travaillé depuis que j'ai commencé à coder. Tout n'y est pas, j'ai juste mis ceux que je considérais être les plu intéressants.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Qwib-Qwib
 linkedin_username: julpons
 
 # Build settings
-theme: minima
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "sunrise"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
