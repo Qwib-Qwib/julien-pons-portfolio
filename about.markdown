@@ -1,18 +1,13 @@
 ---
 layout: page
-title: About
+title: À propos
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Je suis développeur full-stack avec un background dans la traduction et la littérature. Je me suis découvert une passion pour le code, et j'ai appris Ruby et Ruby On Rails à travers Le Wagon et Odin Project. Je continue pour l'instant de me concentrer dessus, j'aimerais cependant évoluer et élargir mes horizons. J'ai pour ambition d'apprendre d'autres technologies et langages, tels que Python et C. J'ai d'ailleurs déjà commencé à apprendre Python et le framework Jekyll.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Étant gamer dans l'âme, j'éprouve un intérêt pour le game design, et je suis actuellement en train de me renseigner sur le sujet ("L'art du game design" par Jesse Schell).
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Le projet final sur lequel j'ai travaillé avec Le Wagon est Canopée, une app visant à aider les citadins français à revitaliser leurs balcons et fenêtres avec des plantes convenant à leur climat, leurs contraintes et leurs envies, et à les aider à s'en occuper sur le long terme.
 
-
-[jekyll-organization]: https://github.com/jekyll
+Je suis ouvert à toute opportunité d'emploi dans le domaine du développement web fullstack. J'utilise principalement Ruby et Ruby on Rails (ROR) en back pour le moment, ceci étant dit je suis tout à fait disposé à apprendre un autre langage si une entreprise est prête à m'accompagner dans l'aventure !
