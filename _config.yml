@@ -23,7 +23,9 @@ email: julien.pons7@orange.fr
 description: >- # this means to ignore newlines until "baseurl:"
   Ceci est un portfolio de projects sur lesquels j'ai travaillé depuis que j'ai commencé à coder. Tout n'y est pas, j'ai juste mis ceux que je considérais être les plu intéressants.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://qwib-qwib.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+locale: fr-FR
+repository: "Qwib-Qwib/julien-pons-portfolio"
 github_username:  Qwib-Qwib
 linkedin_username: julpons
 
