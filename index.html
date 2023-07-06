@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-  </body>
-</html>
+---
+title: Portfolio de Julien Pons
+---
+
+<p>Bienvenue sur mon site personnel ! Cette page d'accueil est un portfolio comprenant plusieurs projets sur lesquels j'ai travaillé depuis que j'ai commencé à coder. Ils n'y sont pas tous, seuls ceux que je considère comme étant les plus intéressants.</p>
+<p>Une page "À propos" avec une petite bio est aussi disponible, si vous souhaitez en savoir plus sur mon profil.</p>
+{% for project in site.portfolio %}
+  <h2>{{ project.title }}</h2>
+{% endfor %}
