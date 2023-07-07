@@ -9,4 +9,4 @@ Une sorte "d'écran magique" surtout codé en JavaScript pur. Lorsque l'utilisat
 
 Petit problème que j'ai remarqué plus tard : toutes les cases ne deviennent pas complètement noires, certaines ne deviennent que *presque* noires. Je pense que cela à quelque chose à voir avec le fait que la division qui s'opère afin de calculer la nouvelle couleur donne parfois un float, ce qui rend le calcul imprécis au fil des assombrissements, un concept dont je n'avais pas conscience au moment de faire ce projet.
 
-[Lien vers le site](https://qwib-qwib.github.io/Etch-a-Sketch/)
+[Lien vers le projet en ligne](https://qwib-qwib.github.io/Etch-a-Sketch/)
