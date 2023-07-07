@@ -2,6 +2,7 @@
 title: Mastermind sur terminal
 picture: mastermind.png
 last_commit: 10-10-2022
+github_repository: https://github.com/Qwib-Qwib/mastermind
 ---
 
 Le jeu de société Mastermind, entièrement codé en pur Ruby, jouable sur terminal. Deux joueurs s'opposent, humains ou ordinateurs : l'un choisit un code secret composé de quatre pions colorés, l'autre à 12 essais pour tenter de deviner la couleur et l'emplacement de chaque pion, en ne recevant que de vagues indices sur chacun de ses choix.
