@@ -8,4 +8,11 @@ defaults:
       path: ""
 
     values:
-      layout: default
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "portfolio"
+
+    values:
+      layout: "portfolio"
