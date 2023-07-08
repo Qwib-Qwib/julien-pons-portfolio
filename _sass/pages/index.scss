@@ -1,0 +1,17 @@
+.index-page {
+  color: white;
+}
+
+.photo-description-wrapper {
+  display: flex;
+  align-items: center;
+
+  .filler {
+    flex-basis: 15%;
+  }
+}
+
+.photo-perso {
+  border-radius: 50%;
+  filter: grayscale(1) contrast(1.5);
+}

@@ -1,7 +1,11 @@
 <nav>
   <div>
     {% for item in site.data.navigation %}
-      <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+      {% if page.permalink != item.link %}
+        <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+      {% else %}
+        <span>{{ item.name }}</span>
+      {% endif %}
     {% endfor %}
   </div>
 </nav>

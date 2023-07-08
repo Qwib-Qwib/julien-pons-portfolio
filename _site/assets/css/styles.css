@@ -1,10 +1,59 @@
-html {
-  background-color: #ffeecc;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
+nav {
+  height: 20vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+nav a {
+  font-size: 2em;
+  margin-right: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #ffeecc;
 }
 
-.container {
+.main-container {
   margin: 0 auto;
   width: 70%;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.index-page {
+  color: white;
+}
+
+.photo-description-wrapper {
+  display: flex;
+  align-items: center;
+}
+.photo-description-wrapper .filler {
+  flex-basis: 15%;
+}
+
+.photo-perso {
+  border-radius: 50%;
+  filter: grayscale(1) contrast(1.5);
+}
+
+html {
+  font-family: Roboto, Verdana, sans-serif;
+}
+
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/backgrounds/IMG_2533.jpg");
+  background-size: cover;
+}
+
+body {
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

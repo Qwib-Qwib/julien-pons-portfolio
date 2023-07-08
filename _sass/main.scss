@@ -1,14 +1,9 @@
-$light-yellow: #ffeecc;
-$yellow: #f2d8af;
-$light-brown: #c3a375;
-$brownish-red: #b3765a;
-$bordeaux-red: #c54a54;
-
 html {
-  background-color: $light-yellow;
+  // background-color: $papaya-whip;
+  background-image:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/backgrounds/IMG_2533.jpg");
+  background-size: cover;
 }
 
-.container {
-  margin: 0 auto;
-  width: 70%;
+body {
+  margin: 0;
 }
