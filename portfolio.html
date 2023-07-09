@@ -1,0 +1,20 @@
+---
+  title: Portfolio
+  permalink: /portfolio
+---
+
+<p>Un portfolio comprenant plusieurs projets sur lesquels j'ai travaillé depuis que j'ai commencé à coder. Ils n'y sont pas tous, seuls ceux que je considère comme étant les plus intéressants.</p>
+
+<div class="projects-list-wrapper">
+  {% for project in site.portfolio %}
+  <div class="project-card">
+    <div>
+      <img src="{{ project.picture }}" alt="Un screenshot de mon {{ project.title }}">
+    </div>
+    <div>
+      <h2>{{ project.title }}</h2>
+      <p>{{ project.excerpt }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>

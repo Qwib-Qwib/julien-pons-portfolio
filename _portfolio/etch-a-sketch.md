@@ -1,6 +1,6 @@
 ---
 title: Etch-a-Sketch
-picture: etch-a-sketch.png
+picture: ../assets/images/portfolio/etch-a-sketch.gif
 last_commit: 02-13-2022
 github_repository: https://github.com/Qwib-Qwib/Etch-a-Sketch
 ---

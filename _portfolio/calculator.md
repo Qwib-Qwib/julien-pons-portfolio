@@ -1,6 +1,6 @@
 ---
 title: Calculator
-picture: calculator.png
+picture: ../assets/images/portfolio/calculator.png
 last_commit: 04-17-2022
 github_repository: https://github.com/Qwib-Qwib/calculator
 ---

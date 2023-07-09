@@ -1,6 +1,6 @@
 ---
 title: Canopée
-picture: canopee.png
+picture: ../assets/images/portfolio/canopee.png
 last_commit: 06-16-2023
 github_repository: https://github.com/konis1/rails-canopee
 ---

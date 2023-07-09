@@ -16,6 +16,13 @@ nav a:hover {
   color: #ffeecc;
 }
 
+.project-card {
+  display: flex;
+}
+.project-card img {
+  height: 200px;
+}
+
 .main-container {
   margin: 0 auto;
   width: 70%;

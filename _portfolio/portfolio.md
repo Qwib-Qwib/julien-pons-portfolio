@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-picture: portfolio.png
+picture: ../assets/images/portfolio/portfolio.png
 last_commit: 10-10-2022
 github_repository: https://github.com/Qwib-Qwib/julien-pons-portfolio
 ---

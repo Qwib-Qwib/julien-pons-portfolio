@@ -1,5 +1,8 @@
-- name: Portfolio
+- name: Home
   link: /
+
+- name: Portfolio
+  link: /portfolio
 
 - name: À propos
   link: /about
