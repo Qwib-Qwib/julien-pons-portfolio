@@ -1,4 +1,12 @@
-nav {
+.navbar-wrapper {
+  width: 100vw;
+}
+
+.not-on-home-page {
+  background: $dark-overlay;
+}
+
+.header-navbar {
   height: 20vh;
   display: flex;
   justify-content: end;
@@ -8,11 +16,18 @@ nav {
     font-size: 2em;
     margin-right: 16px;
     text-decoration: none;
-    color: white;
+    color: $papaya-whip;
     font-weight: bold;
   }
 
   a:hover {
-    color: $papaya-whip;
+    color: $flax;
+  }
+
+  .current-page {
+    color: $dark-orange;
+    font-size: 2em;
+    margin-right: 16px;
+    font-weight: bold;
   }
 }

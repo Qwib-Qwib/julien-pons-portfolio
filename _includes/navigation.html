@@ -1,10 +1,10 @@
-<nav>
+<nav class="header-navbar">
   <div>
     {% for item in site.data.navigation %}
       {% if page.permalink != item.link %}
         <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
       {% else %}
-        <span>{{ item.name }}</span>
+        <span class="current-page">{{ item.name }}</span>
       {% endif %}
     {% endfor %}
   </div>

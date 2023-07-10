@@ -1,6 +1,6 @@
 ---
 title: Mastermind sur terminal
-picture: ../assets/images/portfolio/mastermind.png
+picture: ../assets/images/portfolio/mastermind.gif
 last_commit: 10-10-2022
 github_repository: https://github.com/Qwib-Qwib/mastermind
 ---
