@@ -14,6 +14,12 @@
   justify-content: end;
   align-items: center;
 }
+.header-navbar .underlining {
+  border-top: 4px solid #e9d985;
+  width: 0;
+  transition: width 1s cubic-bezier(0, 0.94, 0.9, 0.99);
+  margin-top: 2px;
+}
 .header-navbar a {
   font-size: 2em;
   margin-right: 16px;
@@ -29,6 +35,13 @@
   font-size: 2em;
   margin-right: 16px;
   font-weight: bold;
+}
+
+.links-wrapper {
+  display: flex;
+}
+.links-wrapper div:hover > .underlining {
+  width: 65%;
 }
 
 .footer-wrapper {

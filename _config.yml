@@ -16,3 +16,7 @@ defaults:
 
     values:
       layout: "project"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

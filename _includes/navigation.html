@@ -1,8 +1,11 @@
 <nav class="header-navbar">
-  <div>
+  <div class="links-wrapper">
     {% for item in site.data.navigation %}
       {% if page.permalink != item.link %}
-        <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+        <div>
+          <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+          <div class="underlining"></div>
+        </div>
       {% else %}
         <span class="current-page">{{ item.name }}</span>
       {% endif %}

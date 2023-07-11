@@ -1,5 +1,6 @@
 ---
 title: À propos
+alt_name: about
 permalink: /about
 ---
 Je suis développeur full-stack avec un background dans la traduction et la littérature. Je me suis découvert une passion pour le code, et j'ai appris Ruby et Ruby On Rails à travers Le Wagon et Odin Project. Je continue pour l'instant à me concentrer dessus, j'aimerais cependant évoluer et élargir mes horizons. J'ai pour ambition d'apprendre d'autres technologies et langages, tels que Python et C. J'ai d'ailleurs déjà commencé à apprendre Python et le framework Jekyll.

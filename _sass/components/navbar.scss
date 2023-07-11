@@ -13,6 +13,13 @@
   justify-content: end;
   align-items: center;
 
+  .underlining {
+    border-top: 4px solid $flax;
+    width: 0;
+    transition: width 1s cubic-bezier(0,.94,.9,.99);
+    margin-top: 2px;
+  }
+
   a {
     font-size: 2em;
     margin-right: 16px;
@@ -30,5 +37,13 @@
     font-size: 2em;
     margin-right: 16px;
     font-weight: bold;
+  }
+}
+
+.links-wrapper {
+  display: flex;
+
+  div:hover > .underlining {
+    width: 65%;
   }
 }
