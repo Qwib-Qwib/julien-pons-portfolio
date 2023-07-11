@@ -15,4 +15,4 @@ defaults:
       type: "portfolio"
 
     values:
-      layout: "portfolio"
+      layout: "project"

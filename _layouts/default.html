@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html{% if page.title == "Home" %} class="home-page"{% endif %}>
+<html>
 
   <head>
     <meta charset="utf-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
 
-  <body>
+  <body{% if page.title == "À propos" %} class="about-page"{% else %}  class="{{ page.title | downcase }}-page"{% endif %}>
     <div class="navbar-wrapper{% if page.title != "Home" %} not-on-home-page{% endif %}">
       <div class="main-container">
         {% include navigation.html %}
@@ -15,7 +15,7 @@
     </div>
 
     <div class="main-container content{% if page.title == "Home" %} short-bio{% elsif page.title == "À propos" %} long-bio{% endif %}">
-      {% unless page.title == "Home" %}<h1>{{ page.title }}</h1>{% endunless %}
+      {% unless page.title == "Home" or page.layout == "project" %}<h1>{{ page.title }}</h1>{% endunless %}
       {{ content }}
     </div>
 

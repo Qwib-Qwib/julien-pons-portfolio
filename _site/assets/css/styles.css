@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 .navbar-wrapper {
   width: 100vw;
+  margin-bottom: 2em;
 }
 
 .not-on-home-page {
@@ -32,6 +33,7 @@
 
 .footer-wrapper {
   width: 100vw;
+  margin-top: 2em;
   background-color: rgba(0, 0, 0, 0.8);
   color: #ffeecc;
   display: flex;
@@ -138,8 +140,32 @@ footer {
   filter: grayscale(1) contrast(1.5);
 }
 
-.long-bio h1 {
-  margin-top: 0;
+.long-bio {
+  flex-grow: 1;
+}
+
+.info-and-picture {
+  display: flex;
+  justify-content: space-between;
+}
+.info-and-picture p {
+  text-justify: none;
+}
+
+.project-information {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-right: 24px;
+}
+
+.project-picture {
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 24px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
 }
 
 html {
@@ -153,10 +179,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: justify;
 }
 
 .content h1 {
   font-size: 3em;
+  margin-top: 0;
   margin-bottom: 0.3em;
 }
 .content h2 {

@@ -1,0 +1,24 @@
+.info-and-picture {
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    text-justify: none;
+  }
+}
+
+.project-information {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-right: 24px;
+}
+
+.project-picture {
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 24px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: center;
+}
