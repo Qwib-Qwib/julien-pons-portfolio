@@ -11,16 +11,16 @@
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Calculator" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Une calculatrice faite entièrement en CSS et JavaScript." />
-<meta property="og:description" content="Une calculatrice faite entièrement en CSS et JavaScript." />
-<link rel="canonical" href="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/calculator.html" />
-<meta property="og:url" content="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/calculator.html" />
+<meta name="description" content="Une calculatrice faite presque entièrement en CSS et JavaScript." />
+<meta property="og:description" content="Une calculatrice faite presque entièrement en CSS et JavaScript." />
+<link rel="canonical" href="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/4-calculator.html" />
+<meta property="og:url" content="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/4-calculator.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-07-12T14:09:48+02:00" />
+<meta property="article:published_time" content="2023-07-16T17:54:24+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Calculator" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-12T14:09:48+02:00","datePublished":"2023-07-12T14:09:48+02:00","description":"Une calculatrice faite entièrement en CSS et JavaScript.","headline":"Calculator","mainEntityOfPage":{"@type":"WebPage","@id":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/calculator.html"},"url":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/calculator.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-16T17:54:24+02:00","datePublished":"2023-07-16T17:54:24+02:00","description":"Une calculatrice faite presque entièrement en CSS et JavaScript.","headline":"Calculator","mainEntityOfPage":{"@type":"WebPage","@id":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/4-calculator.html"},"url":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/4-calculator.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -63,11 +63,15 @@
       <div class="info-and-picture">
   <div class="project-information">
     <h1>Calculator</h1>
-    <p>Une calculatrice faite entièrement en CSS et JavaScript.</p>
+    <p>Une calculatrice faite presque entièrement en CSS et JavaScript.</p>
 
-<p>Les opérations de base sont là, et il y a même une petite fonction pour changer les couleurs de la calculatrice de manière aléatoire.</p>
+<p>La calculatrice est reproduite dans le style d’une CASIO FX-92. Les opérations de base sont là, et il y a même une petite fonction pour changer les couleurs de la calculatrice de manière aléatoire. Il s’agissait surtout d’un exercice de style CSS, de capture d’events, et de logique JavaScript.</p>
 
-<p>Je n’ai pas trouvé de problèmes notables à ce projet, hormis qu’il ne soit pas <em>responsive</em>, ceci étant dit c’est quelque chose que je n’avais pas encore étudié avant d’effectuer ma formation chez Le Wagon.</p>
+<p>Le corps de la calculatrice elle-même, ainsi que son écran et ses boutons, ont au moins un élément HTML associé. L’écran est divisé en deux éléments, un en haut pour afficher l’opération en cours, et un en bas pour afficher le dernier résultat obtenu, comme sur les calculatrices normales. Le tout est ensuite assemblé avec un peu plus d’une centaine de lignes de CSS pour obtenir le look final.</p>
+
+<p>Quant au JavaScript, il détecte à la fois si un clic a lieu sur l’un des boutons de la calculatrice, ou si une touche appropriée du clavier est pressée. Le plus dur a probablement été de faire tenir les données affichées dans l’écran de la calculatrice, ainsi que de coder la logique de l’affichage des opérations, en particulier de différents types d’opérations successives. Ce qu’il se passe au niveau des précédents inputs lorsqu’on entre un opérateur après avoir entré un chiffre, ou deux chiffres, ou plus de deux chiffres, ou aucun chiffre, lorsqu’on appuie sur la touche EXE… Ce genre de choses.</p>
+
+<p>Afin de ne pas rencontrer de problèmes d’affichage, toutes les dimensions sont absolues, plus précisément en cm. Je voulais d’abord afficher les opérations sur écran avec une police d’écriture digitale plus représentative de ce qu’une vraie calculatrice afficherait, mais je ne suis pas parvenu à en trouver une qui corresponde parfaitement à mes besoins. Lorsqu’une touche du clavier est pressée, elle peut parfois effectuer une action de navigateur en plus d’être détectée par mon JavaScript, ce qui peut causer des problèmes : sous Firefox, par exemple, la touche “/” ouvre le champ Quick-find, qui capture le focus de la fenêtre et empêche momentanément les touches suivantes d’être détectées. En relisant mon code, je me suis aussi rendu compte qu’il y a probablement moyen de faire beaucoup plus DRY.</p>
 
 <p><a href="https://qwib-qwib.github.io/calculator/">Lien vers le projet en ligne</a></p>
 

@@ -13,14 +13,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Une sorte “d’écran magique” surtout codé en JavaScript pur." />
 <meta property="og:description" content="Une sorte “d’écran magique” surtout codé en JavaScript pur." />
-<link rel="canonical" href="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/etch-a-sketch.html" />
-<meta property="og:url" content="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/etch-a-sketch.html" />
+<link rel="canonical" href="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/3-etch-a-sketch.html" />
+<meta property="og:url" content="https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/3-etch-a-sketch.html" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-07-12T14:09:48+02:00" />
+<meta property="article:published_time" content="2023-07-16T17:54:24+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Etch-a-Sketch" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-12T14:09:48+02:00","datePublished":"2023-07-12T14:09:48+02:00","description":"Une sorte “d’écran magique” surtout codé en JavaScript pur.","headline":"Etch-a-Sketch","mainEntityOfPage":{"@type":"WebPage","@id":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/etch-a-sketch.html"},"url":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/etch-a-sketch.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-07-16T17:54:24+02:00","datePublished":"2023-07-16T17:54:24+02:00","description":"Une sorte “d’écran magique” surtout codé en JavaScript pur.","headline":"Etch-a-Sketch","mainEntityOfPage":{"@type":"WebPage","@id":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/3-etch-a-sketch.html"},"url":"https://qwib-qwib.github.io/julien-pons-portfolio/portfolio/3-etch-a-sketch.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -65,9 +65,19 @@
     <h1>Etch-a-Sketch</h1>
     <p>Une sorte “d’écran magique” surtout codé en JavaScript pur.</p>
 
-<p>Lorsque l’utilisateur passe sa souris sur le cadre, il laisse une trainée colorée. A chaque fois qu’il repasse sa souris sur une case colorée, la case s’assombrie de 10% jusqu’à devenir noire. L’utilisateur peut choisir le nombre de cases dans le cadre, ce qui a une influence sur la taille de chaque case, le cadre lui-même gardant la même dimension.</p>
+<p>Lorsque l’utilisateur passe sa souris sur le cadre, il laisse une traînée colorée. À chaque fois qu’il repasse sa souris sur une case colorée, la case s’assombrit de 10% jusqu’à devenir noire. L’utilisateur peut choisir le nombre de cases dans le cadre, ce qui a une influence sur la taille de chaque case, le cadre lui-même gardant sa dimension originale.</p>
 
-<p>Petit problème que j’ai remarqué plus tard : toutes les cases ne deviennent pas complètement noires, certaines ne deviennent que <em>presque</em> noires. Je pense que cela à quelque chose à voir avec le fait que la division qui s’opère afin de calculer la nouvelle couleur donne parfois un float, ce qui rend le calcul imprécis au fil des assombrissements, un concept dont je n’avais pas conscience au moment de faire ce projet.</p>
+<p>Ce projet est principalement JavaScript. Une div conteneur est d’abord créée, puis divisée en 16*16 cases (par défaut) de même taille arrangées en grid. Un Event Listener est placé sur chaque case, activé lorsque le curseur passe dessus. Suivant l’état actuel de la case, trois cas de figure différents peuvent se produire. Soit :</p>
+
+<ul>
+  <li>la case n’a jamais été activée, auquel cas une couleur lui est attribuée aléatoirement en générant 6 caractères hexadécimaux et en insérant dans l’élément un style de background-color avec le string obtenu,</li>
+  <li>la case a été activée une seule fois (background-color détecté), auquel cas chaque valeur individuelle du RGB est extraite du background-color précédemment généré et enregistrée comme data-attribute sur la case en question (respectivement en tant que data-red, data-green et data-blue) afin de pouvoir conserver la couleur originale pour toute action future d’assombrissement. Ensuite, le background est assombri une première fois de 10% en divisant chacune de ces valeurs par 10 et en retirant les résultats des valeurs RGB actuelles,</li>
+  <li>la case a été activée plus d’une fois (background-color <strong>et</strong> data-red détectés), auquel cas les data-attributes préexistants sont directement récupérés pour assombrir le style actuel de 10% de la couleur originale, comme dans le cas précédent.</li>
+</ul>
+
+<p>Quant au bouton “reset”, il efface les styles de toutes les cases, génère de nouvelles cases selon le nombre donné par l’utilisateur, et modifie la feuille de style CSS afin de rendre une grid adaptée au nouveau nombre.</p>
+
+<p>En relisant mon code, je me suis rendu compte qu’il y avait moyen de faire plus DRY. Petit problème que j’ai également remarqué plus tard : toutes les cases ne deviennent pas complètement noires, certaines ne deviennent que <em>presque</em> noires. Je pense que cela à quelque chose à voir avec le fait que la division qui s’opère afin de calculer la nouvelle couleur donne parfois un float, ce qui rend le calcul imprécis au fil des assombrissements, un concept dont je n’avais pas conscience au moment de faire ce projet.</p>
 
 <p><a href="https://qwib-qwib.github.io/Etch-a-Sketch/">Lien vers le projet en ligne</a></p>
 

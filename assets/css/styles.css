@@ -161,7 +161,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.info-and-picture p {
+.info-and-picture p, .info-and-picture li {
   text-justify: none;
 }
 
@@ -203,7 +203,7 @@ body {
 .content h2 {
   margin-bottom: 0.1em;
 }
-.content p {
+.content p, .content li {
   font-size: 1.2em;
 }
 
