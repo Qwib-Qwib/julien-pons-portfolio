@@ -44,6 +44,14 @@
   width: 88%;
 }
 
+@media only screen and (max-width: 640px) {
+  .navbar-wrapper {
+    font-size: 0.8rem;
+  }
+  .header-navbar {
+    height: 15vh;
+  }
+}
 .footer-wrapper {
   width: 100vw;
   margin-top: 2em;
@@ -105,6 +113,11 @@ footer {
   font-size: 1.5em;
 }
 
+@media only screen and (max-width: 640px) {
+  footer {
+    width: 80%;
+  }
+}
 .projects-list-wrapper a {
   color: black;
   text-decoration: none;
@@ -125,11 +138,36 @@ footer {
   margin-right: 18px;
 }
 
+.project-card-info {
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-card {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  .project-card h2 {
+    text-align: center;
+  }
+  .project-card-info {
+    padding-left: 16px;
+  }
+}
 .main-container {
   margin: 0 auto;
   width: 70%;
 }
 
+@media only screen and (max-width: 640px) {
+  .main-container {
+    width: 90%;
+  }
+}
 .home-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/backgrounds/IMG_2771.jpg");
   background-size: cover;
@@ -153,6 +191,21 @@ footer {
   filter: grayscale(1) contrast(1.5);
 }
 
+@media only screen and (max-width: 1000px) {
+  .photo-description-wrapper {
+    flex-direction: column;
+  }
+  .home-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .photo-perso {
+    width: 75%;
+  }
+}
 .long-bio {
   flex-grow: 1;
 }
@@ -181,6 +234,26 @@ footer {
   align-self: center;
 }
 
+@media only screen and (max-width: 1800px) {
+  .info-and-picture {
+    flex-direction: column;
+  }
+  .info-and-picture p, .info-and-picture li {
+    text-justify: auto;
+  }
+  .project-picture {
+    width: 75%;
+    height: auto;
+    margin-left: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .project-picture {
+    width: 100%;
+  }
+}
 html {
   font-family: Roboto, Verdana, sans-serif;
 }
