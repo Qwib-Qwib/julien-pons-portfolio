@@ -234,43 +234,27 @@ footer {
   transition: background-color, color, 0.3s;
 }
 
-.info-and-picture {
-  display: flex;
-  justify-content: space-between;
-}
 .info-and-picture p, .info-and-picture li {
   text-justify: none;
 }
 
-.project-information {
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-right: 24px;
+.project-information .project-information-title {
+  text-align: left;
 }
 
 .project-picture {
   display: block;
-  height: 300px;
-  object-fit: cover;
-  margin-left: 24px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: center;
+  width: 75%;
+  margin: auto;
 }
 
 @media only screen and (max-width: 1800px) {
-  .info-and-picture {
-    flex-direction: column;
-  }
   .info-and-picture p, .info-and-picture li {
     text-justify: auto;
   }
   .project-picture {
     width: 75%;
     height: auto;
-    margin-left: 0;
-    flex-grow: 0;
-    flex-shrink: 0;
   }
 }
 @media only screen and (max-width: 1280px) {
